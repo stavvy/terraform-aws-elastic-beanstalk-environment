@@ -467,12 +467,6 @@ variable "instance_role_name" {
   description = "I"
 }
 
-variable "description" {
-  type        = string
-  default     = ""
-  description = "Elastic Beanstalk Application description"
-}
-
 variable "appversion_lifecycle_service_role_arn" {
   type        = string
   description = "The service role ARN to use for application version cleanup. If left empty, the `appversion_lifecycle` block will not be created"
