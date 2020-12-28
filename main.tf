@@ -920,7 +920,6 @@ module "dns_hostname" {
   name    = var.dns_subdomain != "" ? var.dns_subdomain : var.name
   zone_id = var.dns_zone_id
   records = [aws_elastic_beanstalk_environment.default.cname]
-  tags = { for t in keys(module.this.tags) : t => module.this.tags[t] if t != "Name" && t != "Namespace" }
 }
 
 resource "aws_elastic_beanstalk_application" "default" {
