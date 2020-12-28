@@ -95,6 +95,8 @@ module "elastic_beanstalk_environment" {
 
   additional_settings = var.additional_settings
   env_vars            = var.env_vars
+}
+
 module "elastic_beanstalk_application" {
   source      = "../../"
   description = var.description

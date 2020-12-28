@@ -89,6 +89,3 @@ env_vars = {
   "DB_PASSWORD"     = "zzzzzzzzzzzzzzzzzzz"
   "ANOTHER_ENV_VAR" = "123456789"
 }
-name = "elastic-beanstalk-app"
-
-description = "Elastic Beanstalk Aplication test in us-east-2"
