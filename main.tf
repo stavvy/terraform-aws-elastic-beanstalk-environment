@@ -924,7 +924,7 @@ module "dns_hostname" {
 }
 
 resource "aws_elastic_beanstalk_application" "default" {
-  name        = module.this.id
+  name        = module.label.id
   description = var.description
   tags        = local.tags
 
